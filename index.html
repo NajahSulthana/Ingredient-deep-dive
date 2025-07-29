@@ -1,39 +1,83 @@
-<!--Login page-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> login page </title>
-    </head>
-<style>
-div{
-background-color: lightgrey;
-width: 300px;
-border: 40px solid lightsteelblue;
-padding: 10px auto;
-margin: 10px;
-}
-.center{
-    text-align: center;
-    color: blueviolet;
-}
-</style>
-<center>
-    <div>
-    <body>
-        <form action="IngredientDeepDive.html" method="get">
-            <h1> Login Page </h1>
-            <label> Username:</label>
-            <input type="text" id="username" name="username"><br><br>
-            <label> Password: </label>
-            <input type="password" id="password" name="password"><br><br>
-            <input type="submit" value="submit">&nbsp;&nbsp;
-            <input type="reset" value="reset"><br><br>
-            dont have an account?
-            <p><a href="IDDSS.html">create an account</p></a>
-        </form>
-    </div>
-</center>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: #fffaf0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: #f9f1e7;
+      padding: 20px;
+      border: 1px solid #d2a679;
+      border-radius: 8px;
+      width: 280px;
+    }
+    h1 {
+      text-align: center;
+      color: #8b5e3c;
+    }
+    label, input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"], input[type="reset"] {
+      background: #d2a679;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 48%;
+      margin-right: 4%;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .register-link a {
+      color: #8b5e3c;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <form action="IngredientDeepDiveS.html" method="post">
+      <h1>Login</h1>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="buttons">
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+      </div>
+
+      <div class="register-link">
+        Don't have an account? <a href="IDDSS.html">Create one</a>
+      </div>
+    </form>
+  </div>
+</body>
 </html>
 
 
